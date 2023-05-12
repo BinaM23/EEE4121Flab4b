@@ -18,9 +18,9 @@ Assumes the mininet VM being used has POX controller and misc folder containing 
 ### 2. Running the firewall
 1. To run an experiment, run the command `sudo ./run.sh` on the terminal. Then provide the password for that VM if prompted. This will activate the POX controller in the current terminal and invoke the `sdn.py` script in a new terminal.
 
-2. Swicth to this new terminal and provide the password for the VM if prompted, then the network will activate itself and the firewall will be active. Once it finishes execution the script will automatcally clean up the network and close it. 
+2. Swicth to this new terminal and provide the password for the VM if prompted, otherwise the network will activate itself and the firewall will be active. Once it finishes execution the script will automatcally clean up the network and close it. 
 
-3. Swicth back to the terminal that started the controller and run `ctrl+c` to close the controller then run `sudo mn -c` to clear the network.
+3. Swicth back to the terminal that started the controller and run `ctrl+c` to close the controller then run `sudo pkill -f pox.py` then `sudo mn -c` to clear the network. Can make changes according to section 3 then repeat step 1 to 3 above to use the firewall for different blocked hosts.
 
 ### 3. Choosing hosts to block
 
