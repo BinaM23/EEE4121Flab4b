@@ -13,7 +13,7 @@ Assumes the mininet VM being used has POX controller and misc folder containing 
 2. Run the command `sudo mn -c` to clear the network before executing any script to kill any controllers or processes which may not have terminated properly. 
 3. If you haven't already, run `sudo chmod +x *.py` to make all pyhton files executible if they aren't already.
 4. Run `sudo chmod +x run.sh` to make the `run.sh` file executible if it isn't already.
-5. copy the `firewall.py` from the current directory into `pox/pox/misc` directory as root i.e. run a command like `sudo cp firewall.py path/to/pox/pox/misc/directory`
+5. copy the `firewall.py` from the current directory into `pox/pox/misc` directory as root i.e. run a command like `sudo cp firewall.py path/to/pox/pox/misc/directory` if prompted to replace/overwrite the existing firewall.py in that folder, select 'yes/Y'
 
 *NB : the path in the run.sh file is `~/mininet/lab4/eee4121f-b-lab2-sdn/firewall` this must be changed according to the path where the zipped submission will be extracted to.
 
