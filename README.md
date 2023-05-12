@@ -15,6 +15,8 @@ Assumes the mininet VM being used has POX controller and misc folder containing 
 4. Run `sudo chmod +x run.sh` to make the `run.sh` file executible if it isn't already.
 5. copy the `firewall.py` from the current directory into `pox/pox/misc` directory as root i.e. run a command like `sudo cp firewall.py path/to/pox/pox/misc/directory`
 
+*NB : the path in the run.sh file is `~/mininet/lab4/eee4121f-b-lab2-sdn/firewall` this must be changed according to the path where the zipped submission will be extracted to.
+
 ### 2. Running the firewall
 1. To run an experiment, run the command `sudo ./run.sh` on the terminal. Then provide the password for that VM if prompted. This will activate the POX controller in the current terminal and invoke the `sdn.py` script in a new terminal.
 
