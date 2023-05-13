@@ -38,6 +38,7 @@ To change the hosts which get blocked:
 ### 1. Setup
 1. Extract the submitted folder to directory of your choice on your P4 VM
 2. Ensure the folder contains the simple_router/ipv4_router directories which should contain all the necessary files to run the experiment
+3. `cd` to `ipv4_router` directory and if you haven't already, run `sudo chmod +x run.sh` to make the run.sh file executible.
 
 ### 2. Running the network
 1. run the command `sudo ./run.sh` within the `ipv4_router` directory. The network will activate the mininet CLI and you can ping the host, collect stats etc.
