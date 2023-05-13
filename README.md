@@ -32,3 +32,13 @@ To change the hosts which get blocked:
 2. Change the indices of the array slice in line 28 `host_Addresses2=host_Addresses[a:b]` to whatever indices correspond to the particular host MAC addresses you want to block. e.g. to block h1 and h2 the indices of the slice should be `[0:2]` alternatively open the `firewall-policies.csv` file as sudo and add or remove hosts you want to block then leave line 28 as `host_Addresses2=host_Addresses[:]` to process all addresses in the csv file.
 
 3. Save changes then `cd` back to the directory containing the `run.sh` file then follow the steps in section 2.
+
+## PART 2 P4 ROUTER
+
+### 1. Setup
+1. Extract the submitted folder to directory of your choice on your P4 VM
+2. Ensure the folder contains the simple_router/ipv4_router directories which should contain all the necessary files to run the experiment
+
+### 2. Running the network
+1. run the command `sudo ./run.sh` within the `ipv4_router` directory. The network will activate the mininet CLI and you can ping the host, collect stats etc.
+2. When done type `exit` and press enter to close the mininet CLI and end the simulation.
